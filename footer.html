@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+</head>
+
+<style>
+    .footerContainer{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    .logo{
+            padding: 0;
+            margin: 0;
+        }
+    .social-logos{
+        margin-top: 25px;
+    }
+
+    .social-logos img {
+        margin-right: 20px;
+    }
+    .subscribeEmail{
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .subscribeBtn{
+        padding:8px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+    }
+
+    .footerLinks{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+
+    .footerLinks a {
+        text-decoration: none;
+        color: black;
+    }
+    .copyright{
+        text-align: center;
+        color: #8f8f8f;
+    }
+</style>
+<body>
+    <div class="footerContainer">
+        
+        <div class="description">
+            <h1 class="logo">Logo</h1>
+            <p class="">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. </p>
+        </div>
+        
+        <div class="subscribeMail">
+            <input type="email" class="subscribeEmail" name="subscribe-email" id="subscribe-email" class="subscribe-email">
+            <input type="button" value="Subscribe" class="subscribeBtn">
+        
+            <div class="social-logos">
+                <img src="./images/facebook.svg" alt="facebook" srcset="">
+                <img src="./images/instagram.svg" alt="instagram" srcset="">
+                <img src="./images/twitter.svg" alt="twitter" srcset="">
+                <img src="./images/youtube.svg" alt="youtube" srcset="">
+            </div>
+        </div>
+    </div>
+
+        
+    
+        <ul class="footerLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        
+       <hr> 
+   
+        <p class="copyright">@2024 Company Name.All rights reserved</p>
+</body>
+</html>
