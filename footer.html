@@ -7,10 +7,20 @@
 </head>
 
 <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .footer{
+        background-color: black;
+        color: white;
+        padding: 1px;
+    }
     .footerContainer{
         display: flex;
         justify-content: space-between;
         margin: 30px;
+       
     }
     .logo{
             padding: 0;
@@ -18,12 +28,14 @@
         }
     .social-logos{
         margin-top: 25px;
+        text-align: center;
     }
 
     .social-logos img {
         margin-right: 20px;
     }
     .subscribeEmail{
+        outline: none;
         padding: 10px;
         border-radius: 10px;
     }
@@ -32,17 +44,20 @@
         padding:8px 20px;
             border-radius: 10px;
             cursor: pointer;
+            background-color: white;
     }
 
     .footerLinks{
+        
         display: flex;
         list-style-type: none;
         justify-content: space-evenly;
     }
 
+   
     .footerLinks a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
     .copyright{
         text-align: center;
@@ -50,6 +65,10 @@
     }
 </style>
 <body>
+
+    <div class="footer">
+
+    
     <div class="footerContainer">
         
         <div class="description">
@@ -82,5 +101,7 @@
        <hr> 
    
         <p class="copyright">@2024 Company Name.All rights reserved</p>
+
+    </div>
 </body>
 </html>
