@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar styles */
+
+nav{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLinks{
+    margin-top: 10px;
+    display: flex;
+    font-size: large;
+    list-style-type: none;
+  
+}
+.logo{
+    padding: 0;
+    margin: 0;
+}
+.navLinks a{
+    text-decoration: none;
+    color: black;
+    margin-right:15px ;
+}
+.BooknowBtn,.LoginBtn ,.SingupBtn{
+    padding:8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* footer styles */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 1px;
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+   
+}
+.logo{
+        padding: 0;
+        margin: 0;
+    }
+.social-logos{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-logos img {
+    margin-right: 20px;
+}
+.subscribeEmail{
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.subscribeBtn{
+    padding:8px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: white;
+}
+
+.footerLinks{
+    
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+
+.footerLinks a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.copyright{
+    text-align: center;
+    color: #8f8f8f;
+}
