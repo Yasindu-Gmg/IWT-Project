@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./styles/admin.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navabar">
+        <h1 class="logo">LOGO</h1>
+
+        <a href="#"><button type="button" class="BooknowBtn">Book Now</button></a>
+
+        <ul class="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="button-container">
+
+            <a href="#" ><button type="button" class="LoginBtn">Login</button></a>
+            <a href="#" ><button type="button" class="SingupBtn">Sign Up</button></a>
+            
+        </div>
+
+    </nav>
+
+    <!-- body -->
+
+    <div class="admin-info">
+        <h1>Admin</h1><br>
+        <h4>Name: </h4>
+        <h4>Username: </h4>
+        <button>Log Out</button> 
+    </div>
+
+    <div class="accounts">
+
+   
+    <div class="user-accounts">
+        <h2>User Accounts</h2>
+        <table>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Registered Date</th>
+            </tr>
+            <tr>
+                <td>Yasindu</td>
+                <td>yasindu@gmail.com</td>
+                <td>20033/07/07</td>
+            </tr>
+
+            
+        </table>
+    </div>
+    <div class="hotels">
+        <h2>Hotels</h2>
+        <table>
+            <tr>
+                <th>Hotel Name</th>
+                <th>Address</th>
+                <th>Packages</th>
+            </tr>
+            <tr>
+                <td>Yasindu</td>
+                <td>yasindu@gmail.com</td>
+                <td>20033/07/07</td>
+            </tr>
+
+            
+        </table>
+    </div>
+</div>
+    <div class="reservations">
+        <h2>Reservations</h2>
+        <table>
+            <tr>
+                <th>Customer name</th>
+                <th>Hotel Name</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Yasindu</td>
+                <td>yasindu@gmail.com</td>
+                <td>20033/07/07</td>
+                <td><button class="approveBtn">Approve</button></td>
+                <td><button class="declineBtn">Decline</button></td>
+            </tr>
+
+            
+        </table>
+    </div>
+    
+    <div class="container">
+
+    
+    <div class="title">
+        <h1>Admin Panel</h1>
+    </div>
+    <div class="adminTasks">
+    
+    <div class="change-usernames">
+        <h2>Change Username</h2>
+        <form action="" method="post">
+
+            <label for="oldUsername">Old Username</label><br>
+            <input type="text" name="oldUsername" id="oldUsername"><br>
+            <label for="newUsername">New Username</label><br>
+            <input type="text" name="newUsername" id="newUsername"><br>
+            <input type="submit" value="Change Username" class="change">
+        </form>
+
+    </div>
+        <div class="manageUsersHotels">
+
+        
+        <div class="manageUsers">
+            <h2>Deactivate Users Accounts</h2>
+            <form action="" method="post">
+                <input type="text" name="username" id="username">
+                <input type="submit" value="Check Status" class="checkstatusBtn">
+            </form>
+            <p>Status</p>
+            <button class="deactivateBtn">Deactivate</button>
+        </div>
+        <div class="manageHotels">
+            <h2>Deactivate Hotel Representative Accounts</h2>
+            <form action="" method="post">
+                <input type="text" name="repName" id="repName">
+                <input type="submit" value="Check Status" class="checkstatusBtn">
+            </form>
+            <p>Status</p>
+            <button class="deactivateBtn">Deactivate</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+    <!-- footer -->
+    <footer class="footer">
+
+    
+        <div class="footerContainer">
+            
+            <div class="description">
+                <h1 class="logo">Logo</h1>
+                <p class="">Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. </p>
+            </div>
+            
+            <div class="subscribeMail">
+                <input type="email" class="subscribeEmail" name="subscribe-email" id="subscribe-email" class="subscribe-email">
+                <input type="button" value="Subscribe" class="subscribeBtn">
+            
+                <div class="social-logos">
+                    <img src="./images/facebook.svg" alt="facebook" srcset="">
+                    <img src="./images/instagram.svg" alt="instagram" srcset="">
+                    <img src="./images/twitter.svg" alt="twitter" srcset="">
+                    <img src="./images/youtube.svg" alt="youtube" srcset="">
+                </div>
+            </div>
+        </div>
+    
+            
+        
+            <ul class="footerLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            
+           <hr> 
+       
+            <p class="copyright">@2024 Company Name.All rights reserved</p>
+    
+        </footer>
+    
+</body>
+</html>

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+
+/*navbar styles*/
+
+nav{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLinks{
+    margin-top: 10px;
+    display: flex;
+    font-size: large;
+    list-style-type: none;
+  
+}
+.logo{
+    padding: 0;
+    margin: 0;
+}
+.navLinks a{
+    text-decoration: none;
+    color: black;
+    margin-right:15px ;
+}
+.BooknowBtn,.LoginBtn ,.SingupBtn{
+    padding:8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #3C5B6F;
+    border: none;
+    color: white;
+}
+
+
+/*body styles*/
+.admin-info{
+    padding: 20px;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.admin-info > h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.admin-info > button,.approveBtn,.declineBtn,.checkstatusBtn,.deactivateBtn,.change{
+    padding:8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #3C5B6F;
+    border: none;
+    color: white;
+}
+
+.approveBtn{
+    background-color: green !important;
+}
+
+.declineBtn,.deactivateBtn{
+    background-color: red !important;
+}
+
+
+.change-usernames>form>input[type="text"]{
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    outline: none;
+}
+
+
+.manageUsers>form>input[type="text"],
+.manageHotels>form>input[type="text"]{
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 70%;
+    outline: none;
+}
+.accounts{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.reservations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    
+
+}
+
+.user-accounts,.hotels{
+    text-align: center;
+
+}
+
+
+.user-accounts>h2,.hotels>h2,.reservations>h2,.manageUsers>h2,.manageHotels>h2{
+    margin-bottom: 10px;
+
+}
+.container{
+    border: 2px solid black;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.change-usernames{
+    text-align: center;
+}
+.adminTasks{
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+.manageUsers{
+    text-align: center;
+
+}
+
+
+
+
+
+.manageHotels{
+ text-align: center;
+ margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 40px;
+  }
+  
+
+
+/*footer styles*/
+
+.footer{
+    background-color: #153448;
+    color: white;
+    padding: 1px;
+}
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+   
+}
+.logo{
+        padding: 0;
+        margin: 0;
+    }
+.social-logos{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-logos img {
+    margin-right: 20px;
+}
+.subscribeEmail{
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.subscribeBtn{
+    padding:8px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: white;
+}
+
+.footerLinks{
+    
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+
+.footerLinks a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.copyright{
+    text-align: center;
+    color: #8f8f8f;
+}
