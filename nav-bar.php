@@ -39,7 +39,7 @@
     </style>
 </head>
 <body>
-    <!-- Navbar Ekata meke code eka use karanna  -->
+   
     <nav class="navabar">
         <h1 class="logo">LOGO</h1>
 
