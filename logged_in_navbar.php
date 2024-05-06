@@ -39,11 +39,12 @@
     </style>
 </head>
 <body>
+
     <!-- Navbar Ekata meke code eka use karanna  -->
     <nav class="navabar">
         <h1 class="logo">LOGO</h1>
 
-        <a href="#"><button type="button" class="BooknowBtn">Book Now</button></a>
+        <a href="./booking-page.php"><button type="button" class="BooknowBtn">Book Now</button></a>
 
         <ul class="navLinks">
             <li><a href="#">Home</a></li>
@@ -51,11 +52,13 @@
             <li><a href="#">Contact</a></li>
             <li><a href="#">About</a></li>
         </ul>
-        <div class="button-container">
+        <div class="button-container" style="display: flex;">
 
-            <a href="#" ><button type="button" class="LoginBtn">Login</button></a>
-            <a href="#" ><button type="button" class="SingupBtn">Sign Up</button></a>
-            
+            <?php 
+                
+                echo "<h2>"."<a href = 'user-account.php' style='color:black; font-size:20px; text-decoration:none;'>"."<img src='./images/user.png' style='width:25px;height:25px'>"." ".$_SESSION["username"]."</a>"."</h2>";
+                
+            ?>
         </div>
 
     </nav>

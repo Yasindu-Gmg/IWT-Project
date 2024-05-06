@@ -1,0 +1,144 @@
+<?php include_once 'dbc.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Page</title>
+    <link rel="stylesheet" href="reservstion.css">
+</head>
+
+<body>
+    <div class="container1">
+        <div class="box" id="box1">
+
+            <div class="hotelName">
+                <h2>Hotel Name</h2>
+                <p>location</p>
+            </div>
+            <img src="photo.jpg"><br>
+
+            <div class="status1">
+                <input type="date" id="date">
+                <button type="button" id="statusBtn">Check Availability</button>
+            </div>
+            <br>
+            <div class="status2">
+                <p id="p1">Availability Status:</p>
+                <p id="p2">Available</p>
+            </div>
+        </div>
+
+        <div class="box" id="box2">
+            <div class="container2">
+                <div class="abox" id="abox1">
+                    <div class="sabox" id="sabox1">
+                        <p><b><u>Indoor Packages</u></b></p>
+                    </div>
+                    <div class="sabox" id="sabox2">
+                        <div class="bbox" id="bbox1">
+                            <h3>
+                                <?php
+                                    $sql= "SELECT Package_Name FROM Package WHERE Package_ID = 'PK101';"; 
+                                    $result = mysqli_query($connect, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    echo $row['Package_Name'] . "<br>";
+                                ?>
+                            </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus consequatur quisquam eveniet dolore vel. Dolorem blanditiis labore tempore qui commodi officiis pariatur illum perferendis.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                            </ul>
+                            <a href="checkout.html"><button type="button" class="btn">Check Out</button></a>
+                        </div>
+                        <div class="bbox" id="bbox2">
+                            <h3>
+                                <?php
+                                    $sql= "SELECT Package_Name FROM Package WHERE Package_ID = 'PK102';"; 
+                                    $result = mysqli_query($connect, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    echo $row['Package_Name'] . "<br>";
+                                ?>
+                            </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus consequatur quisquam eveniet dolore vel. Dolorem blanditiis labore tempore qui commodi officiis pariatur illum perferendis.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                            </ul>
+                            <a href="checkout.html"><button type="button" class="btn">Check Out</button></a>
+                        </div>
+                        <div class="bbox" id="bbox3">
+                            <h3>
+                                <?php
+                                    $sql= "SELECT Package_Name FROM Package WHERE Package_ID = 'PK103';"; 
+                                    $result = mysqli_query($connect, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    echo $row['Package_Name'] . "<br>";
+                                ?>
+                            </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus consequatur quisquam eveniet dolore vel. Dolorem blanditiis labore tempore qui commodi officiis pariatur illum perferendis.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                            </ul>
+                            <a href="checkout.html"><button type="button" class="btn">Check Out</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="abox" id="abox2">
+                    <div class="sabox" id="sabox1">
+                        <p><b><u>Outdoor Packages</u></b></p>
+                    </div>
+                    <div class="sabox" id="sabox2">
+                        <div class="cbox" id="cbox1">
+                            <h3>
+                                <?php
+                                    $sql= "SELECT Package_Name FROM Package WHERE Package_ID = 'PK104';"; 
+                                    $result = mysqli_query($connect, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    echo $row['Package_Name'] . "<br>";
+                                ?>
+                            </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus consequatur quisquam eveniet dolore vel. Dolorem blanditiis labore tempore qui commodi officiis pariatur illum perferendis.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                            </ul>
+                            <a href="checkout.html"><button type="button" class="btn">Check Out</button></a>
+                        </div>
+                        <div class="cbox" id="cbox2">
+                            <h3>
+                                <?php
+                                    $sql= "SELECT Package_Name FROM Package WHERE Package_ID = 'PK105';"; 
+                                    $result = mysqli_query($connect, $sql);
+                                    $row = mysqli_fetch_assoc($result);
+                                    echo $row['Package_Name'] . "<br>";
+                                ?>
+                            </h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus consequatur quisquam eveniet dolore vel. Dolorem blanditiis labore tempore qui commodi officiis pariatur illum perferendis.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                            </ul>
+                            <a href="checkout.html"><button type="button" class="btn">Check Out</button></a>
+                        </div>
+                        <div class="cbox" id="cbox3">
+                            <h3>Package 03</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatibus consequatur quisquam eveniet dolore vel. Dolorem blanditiis labore tempore qui commodi officiis pariatur illum perferendis.</p>
+                            <ul>
+                                <li>Lorem ipsum dolor</li>
+                                <li>Lorem ipsum dolor</li>
+                            </ul>
+                            <a href="checkout.html"><button type="button" class="btn">Check Out</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

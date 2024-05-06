@@ -11,6 +11,10 @@
     font-style: normal;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
 table, th, td {
     border: 1px solid black;
@@ -116,6 +120,12 @@ nav{
 .changePasswordBtn{
     width: 60% !important;
 }
+
+#delete{
+    color: black;
+    width: 100px;
+}
+
 /* footer styles */
 
 .footer{

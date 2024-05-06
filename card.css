@@ -1,0 +1,80 @@
+.box{
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 550px;
+    margin-top: 145px;
+    width: 400px;
+    height: 510px;
+    box-shadow: 0 7px 25px rgb(95, 95, 95);;
+}
+
+.payment{
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+#txt1{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#txt2{
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#txt3{
+    width: 60px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#txt4{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#sbm{
+    margin-top: 40px;
+    width: 311px;
+    height: 60px;
+    font-size: 25px;
+    border-style: none;
+    background-color: rgb(7, 131, 22);
+    color: white;
+    cursor: pointer;
+}
+#sbm:hover{
+    background-color: rgb(0, 64, 7);
+}
+
+.cd2{
+    display: grid;
+    gap: 5px;
+    margin-top: 5px;
+}
+.cd3{
+    display: grid;
+    gap: 5px;
+    margin-left: 130px;
+    margin-top: 5px;
+}
+.cd1{
+    display: flex;
+}
+
+img{
+    width: 350px;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#lbl{
+    margin-top: 5px;
+}
+
